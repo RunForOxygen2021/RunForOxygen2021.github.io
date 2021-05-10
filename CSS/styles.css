@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	font-size: 16px;
+	color: #43475b;
+	background-color: #f1f2f6;
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	color: inherit;
+}
+
+#page {
+	margin: auto;
+	padding: 2em 8em;
+}
+
+#webhead {
+	padding: 1em 0;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#webhead_heading {
+	font-size: 4em;
+	margin-bottom: 0.5rem;
+}
+
+#blazon {
+	font-weight: 900;
+	letter-spacing: 0.07em;
+}
+
+#oxygen_coefficient {
+	color: #43475b;
+	font-size: 0.3em;
+	margin-left: -0.7em;
+}
+
+#webhead_tagline {
+	font-size: 1.7em;
+}
+
+#hero {
+	color: #f1f2f6;
+	height: 40vh;
+	padding: 3em;
+	display: flex;
+	margin-bottom: 2em;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	border: 3px solid #43475b;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url(https://images.unsplash.com/photo-1612170613964-93b009be98d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1512&q=80);
+}
+
+#hero_content {
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 2.5em;
+}
+
+#hero_tagline {
+	margin-bottom: 1.5rem;
+}
+
+#hero_date {
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+#hero_register_btn {
+	width: 100%;
+	color: #43475b;
+	font-weight: 600;
+	padding: 0.7em 1.5em;
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+	background-color: #f1f2f6;
+}
+
+#instagram {
+	padding: 1em 0;
+}
+
+#about {
+	padding: 1em 0;
+}
