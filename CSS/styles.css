@@ -2,6 +2,7 @@
 
 body {
 	margin: 0;
+	padding: 0;
 	font-size: 16px;
 	color: #43475b;
 	background-color: #f1f2f6;
@@ -15,6 +16,11 @@ a {
 	color: inherit;
 }
 
+p {
+	line-height: 1.7em;
+	letter-spacing: 0.02em;
+}
+
 sup {
 	font-size: 0.5em;
 }
@@ -24,8 +30,8 @@ sup {
 
 #page {
 	margin: auto;
-	padding: 2em 8em;
 	max-width: 1100px;
+	padding: 2em 8em 0 8em;
 }
 
 
@@ -43,12 +49,12 @@ sup {
 	margin-bottom: 0.5rem;
 }
 
-#blazon {
+.oxygen-blazon {
 	font-weight: 900;
 	letter-spacing: 0.07em;
 }
 
-#oxygen_coefficient {
+.oxygen-blazon .oxygen-coefficient {
 	font-size: 0.3em;
 	margin-left: -0.7em;
 }
@@ -56,10 +62,6 @@ sup {
 #webhead_tagline {
 	font-size: 1.7em;
 	line-height: 1.8em;
-}
-
-#mammamia {
-	animation: terror 0.8s infinite;
 }
 
 
@@ -70,8 +72,9 @@ sup {
 	padding: 3em;
 	display: flex;
 	user-select: none;
-	border-radius: 1.5em;
+	margin-bottom: 4em;
 	align-items: center;
+	border-radius: 1.5em;
 	flex-direction: column;
 	justify-content: center;
 	background-size: cover;
@@ -124,6 +127,20 @@ sup {
 }
 
 
+/* FOOTER */
+
+#footer {
+	padding: 3em 3em 2em 3em;
+	color: #f1f2f6;
+	border-radius: 1.5em 1.5em 0 0;
+	background-color: #383c4d;
+}
+
+#footer_heading {
+	font-size: 1.7em;
+}
+
+
 /* ANIMATIONS */
 
 @keyframes terror {
@@ -155,6 +172,6 @@ sup {
 		font-size: 14px;
 	}
 	#page {
-		padding: 2em 10vw;
+		padding: 2em 10vw 0 10vw;
 	}
 }
