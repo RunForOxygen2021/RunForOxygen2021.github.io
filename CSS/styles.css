@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 body {
 	margin: 0;
 	font-size: 16px;
@@ -6,17 +8,32 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+
+/* TAGS */
+
 a {
 	color: inherit;
 }
 
+sup {
+	font-size: 0.5em;
+}
+
+
+/* PAGE */
+
 #page {
 	margin: auto;
 	padding: 2em 8em;
+	max-width: 1100px;
 }
+
+
+/* PAGE HEADING */
 
 #webhead {
 	padding: 1em 0;
+	user-select: none;
 	text-align: center;
 	margin-bottom: 2em;
 }
@@ -32,68 +49,82 @@ a {
 }
 
 #oxygen_coefficient {
-	color: #43475b;
 	font-size: 0.3em;
 	margin-left: -0.7em;
 }
 
 #webhead_tagline {
 	font-size: 1.7em;
-}
-
-#hero {
-	color: #f1f2f6;
-	height: 40vh;
-	padding: 3em;
-	display: flex;
-	margin-bottom: 2em;
-	align-items: center;
-	justify-content: center;
-	background-size: cover;
-	border: 3px solid #43475b;
-	background-position: center;
-	background-attachment: fixed;
-	background-image: url(../Assets/Images/banner.jpeg);
-}
-
-#hero_content {
-	background-color: rgba(0,0,0,0.5);
-	text-align: center;
-	padding: 2.5em;
-}
-
-#hero_tagline {
-	margin-bottom: 1.5rem;
+	line-height: 1.8em;
 }
 
 #real_tagline {
 	animation: terror 0.8s infinite;
 }
 
+
+/* HERO BOX */
+
+#hero {
+	height: 17em;
+	padding: 3em;
+	display: flex;
+	user-select: none;
+	border-radius: 1.5em;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url(../Assets/Images/banner.jpeg);
+	box-shadow: 0 0 1.5em 1em rgba(0,0,0,0.3) inset;
+}
+
+#hero_content {
+	overflow: hidden;
+	border-radius: 1em;
+}
+
+#hero_date, #hero_register_btn_container {
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
 #hero_date {
+	color: black;
 	font-size: 2em;
-	font-weight: 600;
-	margin-bottom: 2rem;
+	mix-blend-mode: screen;
+	background-color: #dedee2;
+	padding: 2.5rem 2.5rem 2rem 2.5rem;
+}
+
+#hero_register_btn_container {
+	padding: 0 2.5rem 2.5rem 2.5rem;
+	background-color: rgba(255,255,255,0.87);
 }
 
 #hero_register_btn {
 	width: 100%;
-	color: #43475b;
+	color: #f1f2f6;
 	font-weight: 600;
 	padding: 0.7em 1.5em;
 	display: inline-block;
 	text-decoration: none;
 	box-sizing: border-box;
-	background-color: #f1f2f6;
+	background-color: #43475b;
+	border: 2px solid #43475b;
+	transition: 0.3s ease;
 }
 
-#instagram {
-	padding: 1em 0;
+#hero_register_btn:active {
+	color: #43475b;
+	background-color: transparent;
 }
 
-#about {
-	padding: 1em 0;
-}
+
+/* ANIMATIONS */
 
 @keyframes terror {
 	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
@@ -107,4 +138,23 @@ a {
 	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
 	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* BREAKPOINTS AND MEDIA QUERIES */
+
+@media (pointer:fine) {
+	#hero_register_btn:hover {
+		color: #43475b;
+		background-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body {
+		font-size: 14px;
+	}
+	#page {
+		padding: 2em 10vw;
+	}
 }
