@@ -103,7 +103,7 @@ sup {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	background-image: url(../Assets/Images/banner.jpeg);
+	background-image: url(../Assets/Images/banner.jpg);
 	box-shadow: 0 0 1.5em 1em rgba(0,0,0,0.3) inset;
 }
 
