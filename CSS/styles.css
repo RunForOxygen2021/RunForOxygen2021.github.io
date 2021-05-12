@@ -16,7 +16,7 @@ a {
 	color: inherit;
 }
 
-p {
+p, .text {
 	line-height: 1.7em;
 	text-align: justify;
 	letter-spacing: 0.02em;
@@ -24,6 +24,23 @@ p {
 
 sup {
 	font-size: 0.5em;
+}
+
+ol, ul {
+	padding-left: 1em;
+}
+
+li {
+	padding-left: 0.8em;
+}
+
+ol>li:not(:last-child) {
+	margin-bottom: 1em;
+}
+
+li::marker {
+	font-weight: 600;
+	padding-right: 1em;
 }
 
 
@@ -45,6 +62,24 @@ sup {
 .button:active {
 	color: #43475b;
 	background-color: transparent;
+}
+
+
+/* HEADINGS */
+
+.heading {
+	font-size: 1.7em;
+}
+
+
+/* DIVIDERS */
+
+.vert-divider {
+	width: 3em;
+	height: 0.2em;
+	margin: 2.2em auto 3em auto;
+	display: inline-block;
+	background-color: #43475b;
 }
 
 
@@ -141,13 +176,8 @@ sup {
 
 /* ABOUT */
 
-#about {
+#content {
 	padding: 2em;
-	margin-bottom: 2em;
-}
-
-#about_heading {
-	font-size: 1.7em;
 }
 
 
@@ -158,10 +188,6 @@ sup {
 	border-radius: 1.5em;
 	padding: 3em 3em 2em 3em;
 	background-color: #383c4d;
-}
-
-#footer_heading {
-	font-size: 1.7em;
 }
 
 #footer_content {
