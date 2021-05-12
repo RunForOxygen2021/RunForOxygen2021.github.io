@@ -304,6 +304,9 @@ li::marker {
 		font-size: 14px;
 	}
 	#page {
-		padding: 2em 10vw;
+		padding: 2em 7vw;
+	}
+	#content {
+		padding: 2em 1em;
 	}
 }
