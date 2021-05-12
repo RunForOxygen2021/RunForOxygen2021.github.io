@@ -150,6 +150,16 @@ sup {
 	font-size: 1.7em;
 }
 
+/* Rules and Regulations */
+
+#randr {
+	padding: 2em;
+	margin-bottom: 2em;
+}
+
+#randr_heading {
+	font-size: 1.7em;
+}
 
 /* FOOTER */
 
