@@ -47,8 +47,10 @@ li::marker {
 /* BUTTONS */
 
 .button {
+	cursor: pointer;
 	color: #f1f2f6;
 	font-weight: 600;
+	text-align: center;
 	padding: 0.7em 1.5em;
 	border-radius: 0.25em;
 	display: inline-block;
@@ -171,6 +173,77 @@ li::marker {
 
 #hero_register_btn_container>.button {
 	flex-grow: 1;
+}
+
+
+/* PAYMENT OPTIONS */
+
+#payment_options_container {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: 101;
+	display: flex;
+	position: fixed;
+	user-select: none;
+	align-items: center;
+	pointer-events: none;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.5);
+	transition: 0.2s ease;
+}
+
+#payment_options {
+	margin: 1em;
+	padding: 2em;
+	max-width: 15em;
+	position: relative;
+	transform: scale(50%);
+	border-radius: 1.5em;
+	background-color: #f1f2f6;
+	transition: 0.2s ease;
+}
+
+#payment_options_close_btn {
+	top: 1.1em;
+	right: 1.1em;
+	cursor: pointer;
+	font-size: 0.9em;
+	position: absolute;
+	display: inline-block;
+	transition: 0.1s ease-out;
+}
+
+#payment_options_close_btn:active {
+	color: #c4c4c9;
+}
+
+#upi_qr {
+	width: 100%;
+	margin-bottom: 1em;
+	border-radius: 1em;
+}
+
+#payment_options_or_divider {
+	margin: 1em 0;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-align: center;
+}
+
+#payment_options .button {
+	width: 100%;
+}
+
+#payment_options_container.show {
+	opacity: 1;
+	pointer-events: all;
+}
+
+#payment_options_container.show #payment_options {
+	transform: scale(100%);
 }
 
 
